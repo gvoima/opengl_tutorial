@@ -1,5 +1,3 @@
-#ifndef __SHADER_H
-#define __SHADER_H
 #pragma once
 
 #include <string>
@@ -16,5 +14,3 @@ private:
 	GLuint m_program;
 	GLuint m_shaders[NUM_SHADERS];
 };
-
-#endif // !__SHADER_H

@@ -1,5 +1,3 @@
-#ifndef __DISPLAY_H
-#define __DISPLAY_H
 #pragma once
 
 #include <string>
@@ -23,5 +21,3 @@ private:
 	SDL_GLContext m_glContext;
 	bool m_isClosed;
 };
-
-#endif // !__DISPLAY_H
