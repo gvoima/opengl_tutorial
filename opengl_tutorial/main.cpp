@@ -4,6 +4,11 @@
 int main(void)
 {
 	Display display(800, 600, "This is great!");
-	std::cout << "This is where it start..." << std::endl;
+
+	while (!display.IsClosed()) {
+		display.Clear(0.5f, 0.6f, 0.7f, 0.8f);
+		display.SwapBuffers();
+	}
+
 	return 0;
 }
