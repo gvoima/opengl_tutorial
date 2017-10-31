@@ -4,9 +4,19 @@ Copy the already compiled headers (.lib/.dll) to the project root, into a e.g. "
 In project properties:
 	- add the headers to the "Additional include directories" in section: C/C++ > General. (this way you can reference them with brackets)
 	- then add the compiled libraries to the linkers additional dependencies, Linker > Input > "Additional Dependencies"
+	- and finally add the path for the additional library directories for the linker in; Linker > General > "Additional Library Directories"
 
 Add this to include directories:
 	.\include (VS will autofill it with ;%(AdditionalIncludeDirectories))
 
+Add this to the linker additional library directories:
+	.\bin
+
 And this to linker libraries (notice, opengl32 comes from the system libraries!):
 	;glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;opengl32.lib
+
+
+--------------------------------------------------------------------------------------
+
+After you compiled your program successfully:
+	- copy the glew32/SDL2.dlls to the active configuration's directory where the .exe file is located.

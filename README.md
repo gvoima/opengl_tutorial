@@ -2,7 +2,9 @@
 A basic opengl tutorial by thebennybox that I followed on youtube; https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh
 All credits go to thebennybox!
 
-All used external libraries are compiled as 64bit on Windows 7
+All used external libraries are compiled as 64bit on Windows 7.
+
+This should work in Visual Studio if you just clone this repository and open the solution!
 
 This program was compiled with:
 - Visual Studio 2015 community IDE

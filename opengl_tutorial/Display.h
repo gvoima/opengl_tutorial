@@ -4,6 +4,10 @@
 #pragma once
 #include <string>
 #include <SDL2\SDL.h>
+// for some odd reason we have to undefine main
+// because SDL_main.h is included automatically in SDL.h
+// https://stackoverflow.com/questions/6847360/error-lnk2019-unresolved-external-symbol-main-referenced-in-function-tmainc
+#undef main
 
 class Display
 {
