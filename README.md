@@ -1,5 +1,6 @@
 # opengl_tutorial
-A basic opengl tutorial by thebennybox on youtube; https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh
+A basic opengl tutorial by thebennybox that I followed on youtube; https://www.youtube.com/playlist?list=PLEETnX-uPtBXT9T-hD0Bj31DSnwio-ywh
+All credits go to thebennybox!
 
 All used external libraries are compiled as 64bit on Windows 7
 
