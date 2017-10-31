@@ -1,0 +1,9 @@
+Copy GL, GLM and SDL to project root folder.
+Then add the headers to the additional libraries directories.
+Then add the compiled libraries to the linker additional dependencies.
+
+Add this to directories:
+	.\GL;.\GLM;.\SDL;.\bin
+
+And this to linker libraries (notice, opengl32 comes from the system libraries!):
+	;glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;opengl32.lib
