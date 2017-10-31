@@ -1,5 +1,5 @@
 Copy GL, GLM and SDL headers to project root folder, into a e.g. "include" directory.
-Copy the already compiled headers (.lib/.dll) to the project root, into a e.g. "bin" directory.
+Copy the already compiled headers 32b or 64b (.lib/.dll) to the project root, into a e.g. "bin" directory.
 
 In project properties:
 	- add the headers to the "Additional include directories" in section: C/C++ > General. (this way you can reference them with brackets)
@@ -10,7 +10,7 @@ Add this to include directories:
 	.\include (VS will autofill it with ;%(AdditionalIncludeDirectories))
 
 Add this to the linker additional library directories:
-	.\bin
+	.\bin\x86 or .\bin\x86_64
 
 And this to linker libraries (notice, opengl32 comes from the system libraries!):
 	;glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;opengl32.lib
