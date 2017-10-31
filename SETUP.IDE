@@ -1,9 +1,12 @@
-Copy GL, GLM and SDL to project root folder.
-Then add the headers to the additional libraries directories.
-Then add the compiled libraries to the linker additional dependencies.
+Copy GL, GLM and SDL headers to project root folder, into a e.g. "include" directory.
+Copy the already compiled headers (.lib/.dll) to the project root, into a e.g. "bin" directory.
 
-Add this to directories:
-	.\GL;.\GLM;.\SDL;.\bin
+In project properties:
+	- add the headers to the "Additional include directories" in section: C/C++ > General. (this way you can reference them with brackets)
+	- then add the compiled libraries to the linkers additional dependencies, Linker > Input > "Additional Dependencies"
+
+Add this to include directories:
+	.\include (VS will autofill it with ;%(AdditionalIncludeDirectories))
 
 And this to linker libraries (notice, opengl32 comes from the system libraries!):
 	;glew32.lib;glew32s.lib;SDL2.lib;SDL2main.lib;SDL2test.lib;opengl32.lib

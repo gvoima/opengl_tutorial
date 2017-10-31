@@ -1,6 +1,6 @@
 #include "Display.h"
 
-Display::Display()
+Display::Display(int width, int height, const std::string& title)
 {
 }
 
