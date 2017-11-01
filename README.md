@@ -11,3 +11,4 @@ This program was compiled with:
 - Simple DirectMedia Layer Library version 2.0.7
 - OpenGL Extension Wrangler Library version 2.1.0
 - OpenGL Mathematics version 0.9.8.5
+- STB image loading/decoding library version 2.16
