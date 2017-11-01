@@ -8,4 +8,6 @@
 /.vs
 /opengl_tutorial/Debug
 /x64/Debug
+/x64/Release
 /opengl_tutorial/x64/Debug
+/opengl_tutorial/x64/Release
